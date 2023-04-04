@@ -16,8 +16,6 @@ class AdvertisementViewSet(ModelViewSet):
     filter_backends = [DjangoFilterBackend, SearchFilter]
     search_fields = ['status']
     filterset_class = AdvertisementFilter
-    # TODO: настройте ViewSet, укажите атрибуты для кверисета,
-    #   сериализаторов и фильтров
 
     def get_permissions(self):
         """Получение прав для действий."""
